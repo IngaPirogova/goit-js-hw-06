@@ -17,7 +17,6 @@ function onInputChange(event) {
   };
 
 
-
 // event.currentTarget.reset();
 
     

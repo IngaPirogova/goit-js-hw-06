@@ -9,18 +9,16 @@ function onFormLogin(event) {
 
     const email = formElements.email.value;
     const password = formElements.password.value;
+    const formData = {email, password};
     
     if (email === "" || password === "") {
         alert('Все поля должны быть заполнены')
-    } 
-
-    const formData = {
-        email, password,
+    } else {
+        console.log(formData);
+        event.currentTarget.reset();
     };
-    console.log(formData);
-
-     event.currentTarget.reset();
-    }
+  
+};
 
 
 
