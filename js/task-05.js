@@ -7,11 +7,19 @@ console.log(spanName);
 inputName.addEventListener('input', onInputChange);
 
 function onInputChange(event) {
-    console.log(event.currentTarget.value);
     spanName.textContent = event.currentTarget.value;
 
-    event.currentTarget.reset();
-}
+    if (inputName.value) {
+      output.textContent = inputName.value;
+    } else {
+      output.textContent = "Anonymous";
+    }
+  };
 
 
+
+// event.currentTarget.reset();
+
+    
+  
 
