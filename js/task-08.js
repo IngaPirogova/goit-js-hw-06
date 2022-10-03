@@ -12,7 +12,7 @@ function onFormLogin(event) {
     
     if (email === "" || password === "") {
         alert('Все поля должны быть заполнены')
-    }
+    } 
 
     const formData = {
         email, password,
