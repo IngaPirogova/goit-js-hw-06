@@ -8,14 +8,13 @@ btnInc.addEventListener('click', onBtnIncClick);
 
 function onBtnDecClick() {
     counterValue -= 1;
-    spanValue.textContent = counterValue;  
-  
-}
+    spanValue.textContent = counterValue;   
+};
 
 function onBtnIncClick() {
     counterValue += 1;
     spanValue.textContent = counterValue;    
-}
+};
 
     
     
