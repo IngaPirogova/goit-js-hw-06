@@ -4,11 +4,9 @@ const spanName = document.querySelector('#name-output');
 
 inputName.addEventListener('input', onInputChange);
 
-function onInputChange(event) {
-    
-
+function onInputChange(event) {    
     if (event.currentTarget.value === "") {
-      spanName.textContent = "Anomymus"
+      spanName.textContent = "Anonymus"
     } else {
       spanName.textContent = event.currentTarget.value
     }
