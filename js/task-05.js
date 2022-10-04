@@ -1,23 +1,21 @@
 
 const inputName = document.querySelector('#name-input');
 const spanName = document.querySelector('#name-output');
-console.log(inputName);
-console.log(spanName);
 
 inputName.addEventListener('input', onInputChange);
 
 function onInputChange(event) {
-    spanName.textContent = event.currentTarget.value;
+    
 
-    if (inputName.value) {
-      output.textContent = inputName.value;
+    if (event.currentTarget.value === "") {
+      spanName.textContent = "Anomymus"
     } else {
-      output.textContent = "Anonymous";
+      spanName.textContent = event.currentTarget.value
     }
   };
 
 
-// event.currentTarget.reset();
+
 
     
   

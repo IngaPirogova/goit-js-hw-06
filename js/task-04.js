@@ -7,14 +7,16 @@ btnDec.addEventListener('click', onBtnDecClick);
 btnInc.addEventListener('click', onBtnIncClick);
 
 function onBtnDecClick() {
-    spanValue.textContent = counterValue;
     counterValue -= 1;
+        spanValue.textContent = counterValue;
+    
     
 }
 
 function onBtnIncClick() {
-    spanValue.textContent = counterValue;
     counterValue += 1;
+    spanValue.textContent = counterValue;
+    
 }
 
     
